@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://oyepriyansh.pages.dev/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <div id="selected-area">
+          <img id="image" src="">
+        </div>
+      </div>
+      <form>
+        <label for="file" class="upload-btn">Upload Image</label>
+        <input type="file" id="file" onchange="previewImage(event)">
+      </form> <br>
+      <div class="filters">
+        <button class="filter" onclick="applyFilter('none')">F1</button>
+        <button class="filter" onclick="applyFilter('grayscale')">F2</button>
+        <button class="filter" onclick="applyFilter('sepia')">F3</button>
+        <button class="filter" onclick="applyFilter('invert')">F4</button>
+        <button class="filter" onclick="applyFilter('hue-rotate')">F5</button>
+        <button class="filter" onclick="applyFilter('blur')">F6</button>
+        <button class="filter" onclick="applyFilter('brightness')">F7</button>
+        <button class="filter" onclick="applyFilter('contrast')">F8</button>
+        <button class="filter" onclick="applyFilter('saturate')">F9</button>
+      </div>
+      <div class="footer-credits">
+        <a href="https://github.com/oyepriyansh" class="button">Made by Priyansh</a>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
+ </body>
+</html>
